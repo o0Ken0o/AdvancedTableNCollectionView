@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		05986D482047A7FF0096F18C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05986D472047A7FF0096F18C /* AppDelegate.swift */; };
-		05986D4A2047A7FF0096F18C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05986D492047A7FF0096F18C /* ViewController.swift */; };
-		05986D4D2047A7FF0096F18C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05986D4B2047A7FF0096F18C /* Main.storyboard */; };
 		05986D4F2047A7FF0096F18C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05986D4E2047A7FF0096F18C /* Assets.xcassets */; };
 		05986D522047A7FF0096F18C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05986D502047A7FF0096F18C /* LaunchScreen.storyboard */; };
+		05986D5A2047AC430096F18C /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05986D592047AC430096F18C /* MyTableViewController.swift */; };
+		05986D5C2047AD6A0096F18C /* SeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05986D5B2047AD6A0096F18C /* SeedData.swift */; };
+		05986D5E2047AF720096F18C /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05986D5D2047AF720096F18C /* MyTableViewCell.swift */; };
 		FEF099D574CFA1273A0C9547 /* Pods_AdvancedTableNCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE4031211E9D8FB998E5FBE /* Pods_AdvancedTableNCollectionView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05986D442047A7FF0096F18C /* AdvancedTableNCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedTableNCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05986D472047A7FF0096F18C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05986D492047A7FF0096F18C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		05986D4C2047A7FF0096F18C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05986D4E2047A7FF0096F18C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05986D512047A7FF0096F18C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05986D532047A7FF0096F18C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05986D592047AC430096F18C /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		05986D5B2047AD6A0096F18C /* SeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedData.swift; sourceTree = "<group>"; };
+		05986D5D2047AF720096F18C /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		1EE4031211E9D8FB998E5FBE /* Pods_AdvancedTableNCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvancedTableNCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C10DF9EA4B8638A964C503 /* Pods-AdvancedTableNCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedTableNCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdvancedTableNCollectionView/Pods-AdvancedTableNCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 		769A86595ACFF76F63696C88 /* Pods-AdvancedTableNCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedTableNCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdvancedTableNCollectionView/Pods-AdvancedTableNCollectionView.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,11 +64,12 @@
 			isa = PBXGroup;
 			children = (
 				05986D472047A7FF0096F18C /* AppDelegate.swift */,
-				05986D492047A7FF0096F18C /* ViewController.swift */,
-				05986D4B2047A7FF0096F18C /* Main.storyboard */,
 				05986D4E2047A7FF0096F18C /* Assets.xcassets */,
 				05986D502047A7FF0096F18C /* LaunchScreen.storyboard */,
 				05986D532047A7FF0096F18C /* Info.plist */,
+				05986D592047AC430096F18C /* MyTableViewController.swift */,
+				05986D5B2047AD6A0096F18C /* SeedData.swift */,
+				05986D5D2047AF720096F18C /* MyTableViewCell.swift */,
 			);
 			path = AdvancedTableNCollectionView;
 			sourceTree = "<group>";
@@ -152,7 +155,6 @@
 			files = (
 				05986D522047A7FF0096F18C /* LaunchScreen.storyboard in Resources */,
 				05986D4F2047A7FF0096F18C /* Assets.xcassets in Resources */,
-				05986D4D2047A7FF0096F18C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,22 +227,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05986D4A2047A7FF0096F18C /* ViewController.swift in Sources */,
 				05986D482047A7FF0096F18C /* AppDelegate.swift in Sources */,
+				05986D5E2047AF720096F18C /* MyTableViewCell.swift in Sources */,
+				05986D5A2047AC430096F18C /* MyTableViewController.swift in Sources */,
+				05986D5C2047AD6A0096F18C /* SeedData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		05986D4B2047A7FF0096F18C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05986D4C2047A7FF0096F18C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		05986D502047A7FF0096F18C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
