@@ -11,19 +11,19 @@ import UIKit
 class MyCollectionViewController: UIViewController {
     
     var collectionView: UICollectionView!
-    var numbers = [1,2,3,4,5,6,7,8].map{ "\($0)" }
+    var numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20].map{ "\($0)" }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .darkGray
         initCollectionView()
     }
     
     func initCollectionView() {
-        let layout = UICollectionViewFlowLayout()
-//        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-//        layout.itemSize = CGSize(width: view.frame.width, height: 700)
+        let layout = MyCollectionViewLayout()
         
         collectionView = UICollectionView(frame: view.frame, collectionViewLayout: layout)
+        collectionView.backgroundColor = .gray
         view.addSubview(collectionView)
         
         collectionView.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: MyCollectionViewCell.identifier)
